@@ -10,10 +10,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res){
-  res.sendFile('article-one is requested here');   
+  res.send('article-one is requested here');   
 });
 app.get('/article-two',function (req, res){
-  res.sendFile('article-two is requested here');   
+  res.send('article-two is requested here');   
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
